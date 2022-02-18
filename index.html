@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100;200&family=Outfit:wght@100&family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Devchallenges</title>
+
+    <style>
+      *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      img{
+        width: 100%;
+        height:auto;
+        border-radius: 16px;
+      }
+      section{
+        width: 70%;
+        margin:0 auto;
+      }
+     main{
+       display: grid;
+       gap:20px;
+       grid-template-columns: 3 1fr;
+       grid-template-rows:3;
+       grid-template-areas:
+       "img1 img2 img2 "
+       "img3 img3 img4"
+       "img6 img5 img4" ;
+     }
+     .img1{
+       grid-area: img1;
+     }
+     .img2{
+       grid-area: img2;
+     }
+     .img3{
+       grid-area: img3;
+     }
+     .img4{
+       grid-area: img4;
+     }
+     .img5{
+       grid-area: img5;
+     }
+     .img6{
+       grid-area: img6;
+     }
+     .profile{
+       max-width: 300px;
+       border-radius: 16px;
+     }
+     .box{
+       width: 35%;
+       margin:40px auto;
+     }
+     .grayBoxes{
+       background-color: #E5E5E5;
+       padding: 20px 0;
+       border-radius: 12px;
+     }
+     .boxes{
+       width: 50%;
+       margin: 0px auto 40px;
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: 70px;
+       column-gap: 10px;
+     }
+     span{
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #BDBDBD;
+     }
+     p{
+      font-size: 18px;
+      font-weight: 700;
+ 
+     }
+     h2,h3{
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: #4E5150;
+      margin:5px 0 ;
+     }
+     h3{
+      color: #A9A9A9;
+      font-size: 16px;
+     }
+     footer{
+       margin:90px 0 30px;
+     }
+     footer p{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #B9BDCF;
+     }
+
+
+
+     @media(max-width:375px){
+      section{
+        width: 95%;
+      }
+      .boxes{
+       width: 80%;
+      }
+      p,span{
+        font-size: 12px;
+        line-height: 15px
+      }
+      h2{
+        font-size: 24px;
+        line-height: 29px;
+      }
+      h3{
+        font-size: 14px;
+        line-height: 17px;
+      }
+      .box{
+        width: 60%;
+      }
+      .profile{
+        max-width: 142px;
+        border-radius: 16px;
+      }
+     }
+    </style>
+  </head>
+  <body>
+   <section>
+     <header class="box">
+       <div >
+         <img class="profile" src="/profilePhoto.png" alt="">
+         <h2>Rodney Cotton</h2>
+         <h3>Helsinki, Finland </h3>
+       </div>
+     </header>
+     <div class="boxes">
+      <div class="grayBoxes">
+        <p>100</p>
+        <span>Posts</span>
+      </div>
+      <div class="grayBoxes">
+       <p>2,242</p>
+       <span>Follower</span>
+     </div>
+     <div class="grayBoxes">
+       <p>1,432</p>
+       <span>Following</span>
+     </div>
+    </div>
+     <main>
+        <img  class="img1"  src="/photo1.png" alt="">
+        <img  class="img2" src="/photo2.png" alt="">
+        <img  class="img3" src="/photo3.png" alt="">
+        <img  class="img4" src="/photo_4.png" alt="">
+        <img  class="img5" src="/photo5.png" alt="">
+        <img  class="img6" src="/photo6.png" alt="">
+     </main>
+   </section>
+   <footer>
+     <p> created by <b>Giannis</b> - devChallenges.io</p>
+   </footer>
+  </body>
+</html>
